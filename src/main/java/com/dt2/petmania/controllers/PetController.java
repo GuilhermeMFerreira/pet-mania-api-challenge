@@ -20,9 +20,24 @@ public class PetController {
         return repository.findAll();
     }
     @PostMapping
-    public void criar(@RequestBody Pet p){
-        repository.save(p);
+    public String criar(@RequestBody Pet p){
+
+        try{
+            repository.save(p);
+            return  p + "Criado com sucesso!";
+        }
+
+        catch (Exception e){
+            return "Deu ruim";
+        }
     }
 
     //CRIE O DELETE
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable int id){
+
+        repository.deleteById(id);
+        return "Deletado com sucesso!";
+    }
 }

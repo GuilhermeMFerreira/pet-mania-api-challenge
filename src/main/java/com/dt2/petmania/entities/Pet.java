@@ -66,6 +66,10 @@ public class Pet {
         this.raca = raca;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setIdade(int idade) {
         this.idade = idade;
     }
