@@ -24,7 +24,7 @@ public class PetController {
 
         try{
             repository.save(p);
-            return  p + "Criado com sucesso!";
+            return  "Criado com sucesso!";
         }
 
         catch (Exception e){
