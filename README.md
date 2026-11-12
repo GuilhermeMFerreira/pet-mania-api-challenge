@@ -90,22 +90,23 @@ Abaixo estão registradas as evidências de funcionamento da aplicação integra
 
 Após a correção dos problemas e inicialização do servidor, a aplicação foi testada diretamente pela interface **Pet Mania**, validando o fluxo completo de interação com o usuário:
 
-![Captura de tela 2026-11-12 142602.png](../../Pictures/Screenshots/Captura%20de%20tela%202026-11-12%20142602.png)
+![img_1.png](images/img_1.png)
 
 #### 3.1. Cadastrar um novo animal
 Validação do formulário de cadastro e envio dos dados para a API:
 
-![Captura de tela 2026-11-12 142302.png](../../Pictures/Screenshots/Captura%20de%20tela%202026-11-12%20142302.png)
+![img_register.png](images/img_register.png)
 
 #### 3.2. Visualizar os animais cadastrados
 Listagem em tela dos registros retornados pela API:
 
-![Captura de tela 2026-11-12 142320.png](../../Pictures/Screenshots/Captura%20de%20tela%202026-11-12%20142320.png)
+![img_list.png](images/img_list.png)
 
 #### 3.3. Excluir um animal
 Remoção de um registro através da interface e atualização da lista:
 
-![Captura de tela 2026-11-12 142345.png](../../Pictures/Screenshots/Captura%20de%20tela%202026-11-12%20142345.png)
+![img_exclude.png](images/img_exclude.png)
+![img_confirm.png](images/img_confirm.png)
 
 ---
 
@@ -117,7 +118,7 @@ Além do front-end, todos os endpoints foram testados diretamente no **Postman**
 - **Status HTTP observado:** `Nenhum HTTP observado.`
 - **Observação:** Retorno da lista completa de animais cadastrados em formato JSON.
 
-![img_1.png](img_1.png)
+![img_get.png](images/img_get.png)
 
 ---
 
@@ -125,7 +126,7 @@ Além do front-end, todos os endpoints foram testados diretamente no **Postman**
 - **Status HTTP observado:** `criado com sucesso`
 - **Observação:** Envio do payload JSON e confirmação do novo registro criado com seu respectivo ID.
 
-![img_3.png](img_3.png)
+![img_post.png](images/img_post.png)
 
 ---
 
@@ -133,7 +134,7 @@ Além do front-end, todos os endpoints foram testados diretamente no **Postman**
 - **Status HTTP observado:** `Deletado com sucesso.`
 - **Observação:** Exclusão confirmada do registro pelo ID e validação de que o item não consta mais na listagem.
 
-![img_2.png](img_2.png)
+![img_delete.png](images/img_delete.png)
 
 ---
 
